@@ -26,7 +26,7 @@ class NewsViewController: UIViewController {
         navigationController?.navigationBar.barTintColor = UIColor(red: 0.0/255.0, green: 255/255.0, blue: 191/255.0, alpha: 1.0)
         UINavigationBar.appearance().barTintColor = UIColor.white //UIColor(red: 0.0/255.0, green: 255/255.0, blue: 191/255.0, alpha: 1.0)
         UINavigationBar.appearance().tintColor = UIColor.white
-        let textAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white]
+        let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
         navigationController?.navigationBar.titleTextAttributes = textAttributes
         
         
@@ -61,7 +61,7 @@ class NewsViewController: UIViewController {
         self.title = kNewsTitleString
         self.activityIndicator.stopAnimating()
 
-        self.articleTableView.rowHeight = UITableViewAutomaticDimension
+        self.articleTableView.rowHeight = UITableView.automaticDimension
         self.articleTableView.estimatedRowHeight = kEstimatedNewsRableRowHeight
 
         //Setup datasource
@@ -122,7 +122,7 @@ extension NewsViewController:UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableViewAutomaticDimension
+        return UITableView.automaticDimension
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
