@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  NewsTestProject
+//  NYNewsApp
 //
-//  Created by Hassan Jaffri on 6/20/19.
-//  Copyright © 2019 Hassan Jaffri. All rights reserved.
+//  Created by Manpreet Kaur on 19/06/19.
+//  Copyright © 2019 Manpreet Kaur. All rights reserved.
 //
 
 import UIKit
@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
     }
